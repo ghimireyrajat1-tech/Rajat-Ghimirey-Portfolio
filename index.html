@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rajat Ghimirey — Disability Support Worker</title>
+<meta name="description" content="Rajat Ghimirey — Disability Support Worker, Melbourne VIC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: oklch(96.5% 0.012 75); font-family: 'Work Sans', sans-serif; }
+  ::selection { background: oklch(58% 0.12 40 / 0.25); }
+  a { color: oklch(58% 0.12 40); }
+  a:hover { color: oklch(48% 0.13 40); }
+
+  .layout {
+    display:flex;
+    min-height:100vh;
+    max-width:1200px;
+    margin:0 auto;
+    background:oklch(99% 0.005 75);
+    box-shadow: 0 0 80px -30px oklch(30% 0.02 60 / 0.2);
+  }
+
+  aside {
+    width:300px;
+    flex-shrink:0;
+    background:oklch(29% 0.035 55);
+    color:oklch(97% 0.008 75);
+    padding:56px 32px;
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+    position:sticky;
+    top:0;
+    align-self:flex-start;
+    height:100vh;
+  }
+
+  .photo {
+    width:132px;
+    height:132px;
+    border-radius:50%;
+    overflow:hidden;
+    border:3px solid oklch(97% 0.008 75 / 0.2);
+    margin:0 auto;
+  }
+  .photo img { width:100%; height:100%; object-fit:cover; display:block; }
+
+  .name-block { text-align:center; }
+  .name-block .name { font-family:'Lora',serif; font-size:26px; font-weight:600; line-height:1.25; }
+  .name-block .role { font-size:14px; color:oklch(80% 0.03 60); margin-top:8px; }
+  .name-block .loc { font-size:13px; color:oklch(68% 0.02 60); margin-top:4px; }
+
+  .email-btn {
+    text-decoration:none;
+    text-align:center;
+    color:oklch(99% 0.005 75);
+    background:oklch(58% 0.12 40);
+    padding:12px 16px;
+    border-radius:10px;
+    font-weight:600;
+    font-size:14px;
+  }
+
+  .skills-label {
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:oklch(72% 0.02 60);
+    margin-bottom:14px;
+    text-align:center;
+  }
+  .skills-wrap { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
+  .skill-pill {
+    font-size:12.5px;
+    background:oklch(97% 0.008 75 / 0.1);
+    color:oklch(92% 0.01 70);
+    padding:7px 13px;
+    border-radius:100px;
+  }
+
+  main {
+    flex:1;
+    padding:72px 80px;
+    display:flex;
+    flex-direction:column;
+    gap:56px;
+    max-width:760px;
+  }
+
+  h2 {
+    font-family:'Lora',serif;
+    font-size:22px;
+    font-weight:600;
+    color:oklch(26% 0.03 60);
+    margin:0 0 16px;
+  }
+
+  .summary p {
+    font-size:16px;
+    line-height:1.8;
+    color:oklch(30% 0.02 60);
+    margin:0;
+  }
+
+  .exp-list { display:flex; flex-direction:column; }
+  .exp-item {
+    padding:22px 0;
+    border-top:1px solid oklch(89% 0.02 60);
+    display:flex;
+    justify-content:space-between;
+    gap:24px;
+  }
+  .exp-item:last-child { border-bottom:1px solid oklch(89% 0.02 60); }
+  .exp-title { font-family:'Lora',serif; font-weight:600; font-size:17px; color:oklch(24% 0.02 60); }
+  .exp-org { font-size:13.5px; color:oklch(50% 0.02 60); margin:4px 0 8px; }
+  .exp-desc { font-size:14px; color:oklch(36% 0.02 60); line-height:1.65; max-width:520px; }
+  .exp-date { font-size:13px; color:oklch(50% 0.02 60); white-space:nowrap; padding-top:2px; }
+
+  @media (max-width: 800px) {
+    .layout { flex-direction:column; }
+    aside { width:auto; height:auto; position:relative; }
+    main { padding:40px 24px; }
+    .exp-item { flex-direction:column; gap:6px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside>
+    <div class="photo">
+      <img src="./headshot.jpg" alt="Rajat Ghimirey">
+    </div>
+    <div class="name-block">
+      <div class="name">Rajat Ghimirey</div>
+      <div class="role">Disability Support Worker</div>
+      <div class="loc">Melbourne, VIC</div>
+    </div>
+    <a class="email-btn" href="mailto:shadyshynet@gmail.com">shadyshynet@gmail.com</a>
+
+    <div>
+      <div class="skills-label">Core Skills</div>
+      <div class="skills-wrap">
+        <span class="skill-pill">SIL Support</span>
+        <span class="skill-pill">Personal Care</span>
+        <span class="skill-pill">Medication Assistance</span>
+        <span class="skill-pill">Behaviour Support</span>
+        <span class="skill-pill">Overnight Shifts</span>
+        <span class="skill-pill">Community Access</span>
+        <span class="skill-pill">Dementia &amp; Autism Support</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <main>
+    <section class="summary">
+      <h2>Professional Summary</h2>
+      <p>Compassionate and dependable Disability Support Worker with hands-on experience delivering person-centred support across home care and Supported Independent Living (SIL) environments. Confident working independently, managing active and passive overnight shifts, community access, medication assistance, personal care, and behaviour de-escalation. Recognised for calm communication, reliability, and the ability to build trust with high-needs NDIS participants.</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="exp-list">
+        <div class="exp-item">
+          <div>
+            <div class="exp-title">Disability Support Worker</div>
+            <div class="exp-org">Reliable Community Care, Dallas VIC</div>
+            <div class="exp-desc">One-on-one and SIL support for participants with complex physical, intellectual, and psychosocial needs — including non-verbal autism, dementia, and challenging behaviours.</div>
+          </div>
+          <div class="exp-date">2025 – Present</div>
+        </div>
+        <div class="exp-item">
+          <div>
+            <div class="exp-title">Prebatch &amp; Baker</div>
+            <div class="exp-org">Terrys Tortes and Treats, Coburg North</div>
+            <div class="exp-desc">High-volume commercial kitchen production, hygiene and food-safety standards, teamwork under time pressure.</div>
+          </div>
+          <div class="exp-date">2023 – 2024</div>
+        </div>
+        <div class="exp-item">
+          <div>
+            <div class="exp-title">Houseman</div>
+            <div class="exp-org">Marriott Jeju, South Korea</div>
+            <div class="exp-desc">High-level customer service in an international hotel environment; room readiness, cleanliness standards, guest satisfaction.</div>
+          </div>
+          <div class="exp-date">2019 – 2023</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+</body>
+</html>
